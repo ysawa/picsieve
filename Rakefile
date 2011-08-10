@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "picsieve"
   gem.homepage = "http://github.com/ysawa/picsieve"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{pictures of picture providers}
+  gem.description = %Q{pictures of picture providers}
   gem.email = "yoshihirosawa@gmail.com"
   gem.authors = ["Y Sawa"]
   # dependencies defined in Gemfile
