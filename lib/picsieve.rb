@@ -1,11 +1,12 @@
 module PicSieve
   autoload :Picture, 'picsieve/picture'
 
-  PROVIDERS = %w(Instagram Yfrog)
+  PROVIDERS = %w(Instagram Twitpic Yfrog)
 
   module Provider
     autoload :Abstract, 'picsieve/provider/abstract'
     autoload :Instagram, 'picsieve/provider/instagram'
+    autoload :Twitpic, 'picsieve/provider/twitpic'
     autoload :Yfrog, 'picsieve/provider/yfrog'
   end
 

@@ -6,7 +6,11 @@ module PicSieve
       end
 
       def search(text)
-        self::PATTERN.match(text).to_a.uniq
+        result = self::PATTERN.match(text).to_a.uniq
+        result.delete_if do |url|
+          url !~ /^(http|https):\/\//
+        end
+        result
       end
 
       def search_and_convert_all(text)
